@@ -1,6 +1,9 @@
 import streamlit as st
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_groq_response(prompt):
     """
