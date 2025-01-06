@@ -12,11 +12,9 @@ def get_groq_response(prompt):
 
     Returns:
         str: The chatbot's response, or an informative error message.
-    """
-
-    
-    API_URL = os.environ.get("GROQ_API_URL")
-    API_KEY = os.environ.get("GROQ_API_KEY")# Use an environment variable for the API key
+    """    
+    API_URL = "https://api.groq.com/openai/v1/chat/completions"  # Groq API endpoint
+    API_KEY = "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"
 
     if not API_URL or not API_KEY:
         st.error("Please set the GROQ_API_URL and GROQ_API_KEY environment variables.")
