@@ -14,7 +14,7 @@ def get_groq_response(prompt):
     """
 
     API_URL = "https://api.groq.com/openai/v1/chat/completions"  # Groq API endpoint
-    API_KEY = "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" # Use an environment variable for the API key
+    API_KEY = "ADD YOUR_KEY" # Use an environment variable for the API key
 
     if not API_URL or not API_KEY:
         st.error("Please set the GROQ_API_URL and GROQ_API_KEY environment variables.")
