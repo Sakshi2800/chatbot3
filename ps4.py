@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import requests
 
-
 def get_groq_response(prompt):
     """
     Fetches a response from the Groq API, handling potential errors gracefully.
@@ -12,9 +11,10 @@ def get_groq_response(prompt):
 
     Returns:
         str: The chatbot's response, or an informative error message.
-    """    
+    """
+
     API_URL = "https://api.groq.com/openai/v1/chat/completions"  # Groq API endpoint
-    API_KEY = "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"
+    API_KEY = "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" # Use an environment variable for the API key
 
     if not API_URL or not API_KEY:
         st.error("Please set the GROQ_API_URL and GROQ_API_KEY environment variables.")
